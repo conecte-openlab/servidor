@@ -33,5 +33,3 @@ Ao iniciar um novo projeto a partir de um repositório já existente, Clique F1 
 Git:Clone
 ```
 Insira o URL do repositório a ser clonado, escolha uma pasta no seu computador para o projeto, e pronto.
-
-Teste de branch
