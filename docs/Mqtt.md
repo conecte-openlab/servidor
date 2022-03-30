@@ -16,10 +16,14 @@ Para a instalação do Mqtt, basta sequir os passos abaixo:
 
 - Inicialmente, faça o download do instalador no[link](https://mosquitto.org/download/)
 - Após o download, ao executar, siga os passos abaixo:
+
 - ![pic](/media/git/mqtt/um.png)
-- ![pic](/media/git/mqtt/DOIS.png)
-- ![pic](/media/git/mqtt/tres.png)
-- ![pic](/media/git/mqtt/quatro.png)
+
+- ![pic](/media/git/mqtt/DOIS.png) 
+
+- ![pic](/media/git/mqtt/tres.png) 
+
+- ![pic](/media/git/mqtt/quatro.png) 
 
 
 ### Referências e recomendações:
