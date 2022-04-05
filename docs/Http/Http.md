@@ -14,6 +14,8 @@ As principais funções Http:
 
 ## Referências e recomendações:
 
-- Página de informações sobre Http [link](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview)
-- Guia Http basics [link](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Basics_of_HTTP)
-- Mais informações sobre http [link](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)
+- Video aula sobre http [link](https://www.youtube.com/watch?v=V4XZ81vRGtM&t=39s&ab_channel=ProgramadoraBordo).
+- Página de informações sobre Http [link](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview).
+- Guia Http basics [link](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Basics_of_HTTP).
+- Mais informações sobre http [link](https://developer.mozilla.org/pt-BR/docs/Web/HTTP).
+
