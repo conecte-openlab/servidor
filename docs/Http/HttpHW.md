@@ -46,3 +46,10 @@ O segundo passo será requerir as informações do site criado, por um secundár
 Assim, com o ambiente preparado, basta fazer a linkagem dos blocos e apertar no botão do "timestamp".
     ![pic](/media/git/Http/dez.png)
     No canto direito, na parte"Debug", estará o dado requisitado de outra aba.
+
+### Referências e recomendações:
+
+- Videoaula sobre Http request [link](https://www.youtube.com/watch?v=cicTw4SEdxk&ab_channel=SteveCope).
+- Videoaula sobre a segunda parte [link](https://www.youtube.com/watch?v=58Cim4kBKkA&t=439s&ab_channel=CFBCursos).
+- Aprofundamento da segunda parte [link](https://www.youtube.com/watch?v=58Cim4kBKkA&t=439s&ab_channel=CFBCursos).
+- Exemplo de requerimento de informações [link](https://www.youtube.com/watch?v=PkqXU39C9d0&ab_channel=FutureCloud).
