@@ -1,6 +1,6 @@
 # Mosquitto (Mqtt)
 
-O mosquitto é o protocolo responsável por fazer a comunicação de redes dos dispositivos conectados à mesma. A melhor maneira de explicar o funcionamento do protocolo mqtt é a partir da imagem abaixo.
+O MQTT é o protocolo responsável por fazer a comunicação de redes dos dispositivos conectados à mesma. A melhor maneira de explicar o funcionamento do protocolo mqtt é a partir da imagem abaixo.
 
 ![pic](/media/git/mqtt/meio.png)
 
@@ -34,3 +34,6 @@ Para a instalação do Mqtt, basta sequir os passos abaixo:
 - Vídeo referência de explicação [link](https://www.youtube.com/watch?v=-GCb6aRGotE&t=207s&ab_channel=LNPBR)
 
 - Recomendações de leitura para aprofundamento[link](https://mqtt.org/getting-started//)
+
+
+(MOSQUITTO é diferente d MQTT - corrigir ao longo do texto)
