@@ -11,7 +11,7 @@ Para o primeiro "Hello World" no Mqtt, o teste do servidor será feito. Basta ac
 - Iniciar o prompt de comando e fazer o direcionamento do diretório para a pasta em que o Mqtt está salvo:
 
   - ##### A alteração do diretório é feita com comando "cd" no prompt. Para "apagar" o diretório ja setado, basta colocar "cd.." ou "cd\"
-  ![pic](/servidor/media/git/Mqtt/MqttHW/dois.png)
+  ![pic](/media/git/Mqtt/MqttHW/dois.png)
 
 - O mesmo é feito em mais dois prompts, para que a atuação do protocolo fique mais visível no servidor.
 
@@ -20,7 +20,7 @@ Para o primeiro "Hello World" no Mqtt, o teste do servidor será feito. Basta ac
   - Comando para inscrever: mosquitto_sub -v -t 'NomeDoTopicoCadastrado'
   - Comando para publicar: mosquitto_pub -t 'NomeDoTopicoCadastrado' -m 'HelloWorld'
 
-  ![pic](/servidor/media/git/Mqtt/MqttHW/tres.png)     Expicação das imagens: No prompt debaixo, ocorreu a inicialização do broker, que foi também utilizado como Publisher, em seguida. No prompt da parte superior direita um Publisher. No prompt da parte superior esquerda, um Subscriber.
+  ![pic](/media/git/Mqtt/MqttHW/tres.png)     Expicação das imagens: No prompt debaixo, ocorreu a inicialização do broker, que foi também utilizado como Publisher, em seguida. No prompt da parte superior direita um Publisher. No prompt da parte superior esquerda, um Subscriber.
 
 
 

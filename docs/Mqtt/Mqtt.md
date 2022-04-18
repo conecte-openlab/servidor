@@ -2,13 +2,13 @@
 
 O mosquitto é o protocolo responsável por fazer a comunicação de redes dos dispositivos conectados à mesma. A melhor maneira de explicar o funcionamento do protocolo mqtt é a partir da imagem abaixo.
 
-![pic](/servidor/media/git/mqtt/meio.png)
+![pic](/media/git/mqtt/meio.png)
 
 A imagem acima se refere à uma representação de como funcionaria um sistema de censores, interruptores e central se comunicando, sem o protocolo Mqtt. Assim, a dificuldade de comunicação entre os dispositivos é nítida. 
 
 A atuação do protocolo Mqtt, é, basicamente, uma forma para organizar e ordenar os dispositivos conectados à rede. O funcionamento do mesmo é baseado em um sistema de "Publisher" e "Subscriber",  em que temos os "emissores" e "receptores" de comandos e mensagens. A imagem abaixo faz referência à utilização do protocolo na rede da primeira imagem.
 
-![pic](/servidor/media/git/mqtt/quaseUM.png)
+![pic](/media/git/mqtt/quaseUM.png)
 
 ## Instalação
 
@@ -17,13 +17,13 @@ Para a instalação do Mqtt, basta sequir os passos abaixo:
 - Inicialmente, faça o download do instalador no [link](https://mosquitto.org/download/)
 - Após o download, ao executar, siga os passos abaixo:
 
-- ![pic](/servidor/media/git/mqtt/um.png)
+- ![pic](/media/git/mqtt/um.png)
 
-- ![pic](/servidor/media/git/mqtt/DOIS.png) 
+- ![pic](/media/git/mqtt/DOIS.png) 
 
-- ![pic](/servidor/media/git/mqtt/tres.png) 
+- ![pic](/media/git/mqtt/tres.png) 
 
-- ![pic](/servidor/media/git/mqtt/quatro.png) 
+- ![pic](/media/git/mqtt/quatro.png) 
 
 
 ### Referências e recomendações:
