@@ -11,26 +11,26 @@ Confira o procedimento para instalação do Node.JS:
 - Inicialmente, acesse site principal do Node.JS ([link](https://nodejs.org/en/download/)) na parte de downloads e faça a escolha adequada a partir do sistema operacional utilizado.
 - Assim, basta seguir os passos abaixo:
 
- ![pic](/media/git/media/MediaNode/um.png)
+ ![pic](/IC2022/media/MediaNode/um.png)
  
- ![pic](/media/git/MediaNode/dois.png)
+ ![pic](/IC2022/media/MediaNode/dois.png)
 
- ![pic](/media/git/MediaNode/tres.png)
+ ![pic](/IC2022/media/MediaNode/tres.png)
  
- ![pic](/media/git/MediaNode/quatro.png)
+ ![pic](/IC2022/media/MediaNode/quatro.png)
  
- ![pic](/media/git/MediaNode/cinco.png)
+ ![pic](/IC2022/media/MediaNode/cinco.png)
  
- ![pic](/media/git/MediaNode/seis.png)
+ ![pic](/IC2022/media/MediaNode/seis.png)
 
 
 - Por fim, a instalação esta efetuada. Para verificar se a mesma está validada, basta ir no menu iniciar e digitar "node.js"
 
-  ![pic](/media/git/MediaNode/sete.png)
+  ![pic](/IC2022/media/MediaNode/sete.png)
 
 Como dito, tem-se uma interface simples:
 
-  ![pic](/media/git/MediaNode/oito.png)
+  ![pic](/IC2022/media/MediaNode/oito.png)
 
 ## Referências e recomendações:
 

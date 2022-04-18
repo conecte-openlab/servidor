@@ -22,7 +22,7 @@ Toda informação necessária para se usar o GitHub está no guia introdutório 
 
 Para integrar o código produzido localmente no VSCode com o código no GitHub devemos primeiro abrir uma pasta para o projeto.
 
-![pic1](/media/git/p1.png)
+![pic1](/IC2022/media/p1.png)
 
 Então Clica-se em Controle do Código-Fonte na a lateral esquerda, e depois em publicar no GitHub, se não houver feito a sincronização do Git com a sua conta do GitHub uma página para logar com a sua conta do GitHub será aberta, após a sincronização é só publicar normalmente.
 

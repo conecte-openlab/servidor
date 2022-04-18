@@ -14,9 +14,9 @@ Para a instalação do Node-RED tem-se que a única exigencia é que o Node.JS e
 - Insira o seguinte código para instalação da ferramenta "npm install -g --unsafe-perm node-red"
 - Aguarde a instalação do mesmo
 - Digite "node-red" e executaremos. A seguinte tela aparecerá:
-![pic](/media/git/MediaNode/nove.png) 
+![pic](/IC2022/media/MediaNode/nove.png) 
 - Assim, basta copiar o código que está selecionado e colar no browser, abrindo a interface do Node-RED:
-![pic](/media/git/MediaNode/dez.png)
+![pic](/IC2022/media/MediaNode/dez.png)
 
 -[Link](https://nodered.org/docs/getting-started/windows) para instalação e mais informações e opções sobre a mesma.
 
