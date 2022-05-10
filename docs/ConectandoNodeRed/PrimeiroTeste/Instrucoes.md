@@ -1,13 +1,13 @@
 # Intruções para o primeiro projeto básico
 
-## Introdução:
+### Introdução:
 O objetivo deste primeiro projeto é fazer um ciclo completo, em que a informação será enviada, recebida, tratada, armazenada e exposta ao usuário. Inicicialmente, será utilizado MQTT, em seguida o HTTP
 
 ### Requisitos:
 Serão requisitados a utilização: node-red, MQTTBox e MongoDB Clound.
 
 ### Estrutura:
-Para que o projeto ocorra de forma eficiente, é necessário que o MQTTBox esteja funcionando para que o servidor esteja conectado. Segue o (link)[] com a instalação e configuração do mesmo
+Para que o projeto ocorra de forma eficiente, é necessário que o MQTTBox esteja funcionando para que o servidor esteja conectado. Segue o (link)[] com a instalação e configuração do mesmo. Para o entendimento da utilização do protocolo e a interação com o node-red recomenda-se este [video](https://www.youtube.com/watch?v=XwpapCUh9bU&t=4s&ab_channel=JorgeAugustoMondadori).
 
 A estrutura utilizada para este projeto é a que segue abaixo:
 
@@ -17,7 +17,7 @@ A estrutura utilizada para este projeto é a que segue abaixo:
 
 - A segunda e a terceira linha são as bases das comunicações. Na segunda, tem-se um inject com nome "Iniciar", com "msg.payload=iniciar", ligado à uma function. A funtion faz apenas a alteração do msg.payload setado acima para "msg.payload=hora". Para o fim deste fluxo, tem-se a transmissão da informação para o tópico setado.
   - [Link](https://www.youtube.com/watch?v=03NwekIdcMo&t=488s&ab_channel=ShahramJalaliniya) para configuração do Clound MongoDB
-
+   
 - No terceiro e ultimo fluxo, a informação é recebida pela inscrição no tópico, em seguida bifurcada. Na parte superior, em "function", tem-se o tratamento do dado para que apareça apenas a parte desejada (o código segue abaixo), em seguida publicada no tópico. Já na parte inferior, a informação é armazenada no DataBase da nuvem do MongoDB.
 
 #### Código utilizado para tratamento de dados:
