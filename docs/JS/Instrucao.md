@@ -35,7 +35,10 @@ Este é um documento que resume, de forma mais básica, a playlist (link) do cur
         -window.prompt('Digite algo:')
 
          Exemplo:
-        ![img](/media/meio.png)
+        
+        ![img](git/media/)
+        meio.png)
+
         ![img](/media/um.png)
 
         - [referencia](https://www.youtube.com/watch?v=OmmJBfcMJA8&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm&index=7&ab_channel=CursoemV%C3%ADdeo) (min:6'00")
@@ -71,7 +74,7 @@ Este é um documento que resume, de forma mais básica, a playlist (link) do cur
                 "String(variavel)"
                 "variável.toString()"
 
-//Recomenda-se o video o (link)[https://www.youtube.com/watch?v=OJgu_KCCUSY&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm&index=9&ab_channel=CursoemV%C3%ADdeo] para o trabalho com strings (9'30" min)
+        // Recomenda-se o video o [link](https://www.youtube.com/watch?v=OJgu_KCCUSY&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm&index=9&ab_channel=CursoemV%C3%ADdeo) para o trabalho com strings (9'30" min)
 
-### Boolean:
-     representa o positivo e negativo, zero e um.
+    ### Boolean:
+        representa o positivo e negativo, zero e um.
