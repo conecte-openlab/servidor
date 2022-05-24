@@ -26,7 +26,7 @@ A estrutura utilizada para este projeto é a que segue abaixo:
     
     var now = new Date();
 
-    let localDate = new Date(now.toLocaleString('pt-BR', { timeZone: "Europe/Budapest" }));
+    let localDate = new Date(now.toLocaleString('en-US', { timeZone: "Europe/Budapest" }));
     let offset = now.getTime() - localDate.getTime();
     now.setTime( now.getTime() + offset );
 
