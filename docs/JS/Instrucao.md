@@ -36,8 +36,7 @@ Este é um documento que resume, de forma mais básica, a playlist (link) do cur
 
          Exemplo:
         
-        ![img](git/media/)
-        meio.png)
+        ![img](git/media/meio.png)
 
         ![img](/media/um.png)
 
