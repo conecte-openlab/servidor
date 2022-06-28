@@ -1,0 +1,309 @@
+[
+    {
+        "id": "acc60f3bfe0d317c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6ba6274dbc89a186",
+        "type": "mqtt in",
+        "z": "acc60f3bfe0d317c",
+        "name": "",
+        "topic": "teste",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "605d23fbc8799f8c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "b7897d83d69a552e",
+                "622ff0cab1588508"
+            ]
+        ]
+    },
+    {
+        "id": "6489697b03c97dc3",
+        "type": "mongodb4",
+        "z": "acc60f3bfe0d317c",
+        "clientNode": "f79303064cf45e1c",
+        "collection": "Registro",
+        "operation": "insertOne",
+        "output": "toArray",
+        "name": "",
+        "x": 840,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de9017b77217a3c7",
+        "type": "mqtt out",
+        "z": "acc60f3bfe0d317c",
+        "name": "",
+        "topic": "Postando",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "605d23fbc8799f8c",
+        "x": 1080,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "23fbacbf6f143e13",
+        "type": "function",
+        "z": "acc60f3bfe0d317c",
+        "name": "",
+        "func": "var name= msg.payload[0].name;\nmsg.payload=[{\"name\":name}];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 360,
+        "wires": [
+            [
+                "a437a76bda7b9930"
+            ]
+        ]
+    },
+    {
+        "id": "a437a76bda7b9930",
+        "type": "mongodb4",
+        "z": "acc60f3bfe0d317c",
+        "clientNode": "f79303064cf45e1c",
+        "collection": "Registro",
+        "operation": "find",
+        "output": "toArray",
+        "name": "",
+        "x": 870,
+        "y": 360,
+        "wires": [
+            [
+                "de9017b77217a3c7",
+                "747c388ee5887374"
+            ]
+        ]
+    },
+    {
+        "id": "b7897d83d69a552e",
+        "type": "switch",
+        "z": "acc60f3bfe0d317c",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "\"cadastro\"",
+                "vt": "jsonata"
+            },
+            {
+                "t": "cont",
+                "v": "\"pesquisa\"",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "6315c7ea42f8fd34"
+            ],
+            [
+                "4b4ba86ad9be7772"
+            ]
+        ]
+    },
+    {
+        "id": "0812b4c56555f703",
+        "type": "function",
+        "z": "acc60f3bfe0d317c",
+        "name": "",
+        "func": "var obj= [{\"_id\":\"9\",\"funcao\":\"pesquisa\",\"name\":\"Nicolas\", \"age\":21, \"car\":\"mustang\"}]\n\nmsg.payload=obj\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 200,
+        "wires": [
+            [
+                "ef020a940f00f7ce"
+            ]
+        ]
+    },
+    {
+        "id": "ef020a940f00f7ce",
+        "type": "mqtt out",
+        "z": "acc60f3bfe0d317c",
+        "name": "",
+        "topic": "teste",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "605d23fbc8799f8c",
+        "x": 910,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1ca8634e1784ed65",
+        "type": "inject",
+        "z": "acc60f3bfe0d317c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "0812b4c56555f703"
+            ]
+        ]
+    },
+    {
+        "id": "622ff0cab1588508",
+        "type": "debug",
+        "z": "acc60f3bfe0d317c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "6315c7ea42f8fd34",
+        "type": "json",
+        "z": "acc60f3bfe0d317c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 610,
+        "y": 280,
+        "wires": [
+            [
+                "6489697b03c97dc3"
+            ]
+        ]
+    },
+    {
+        "id": "4b4ba86ad9be7772",
+        "type": "json",
+        "z": "acc60f3bfe0d317c",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 610,
+        "y": 360,
+        "wires": [
+            [
+                "23fbacbf6f143e13"
+            ]
+        ]
+    },
+    {
+        "id": "747c388ee5887374",
+        "type": "debug",
+        "z": "acc60f3bfe0d317c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "605d23fbc8799f8c",
+        "type": "mqtt-broker",
+        "name": "MQTT MeuNote",
+        "broker": "192.168.1.101",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f79303064cf45e1c",
+        "type": "mongodb4-client",
+        "name": "local",
+        "protocol": "mongodb",
+        "hostname": "localhost",
+        "port": "27017",
+        "dbName": "BD",
+        "authSource": "",
+        "authMechanism": "DEFAULT",
+        "tls": false,
+        "tlsCAFile": "",
+        "tlsInsecure": false,
+        "uri": "",
+        "advanced": "",
+        "uriTabActive": "tab-uri-simple"
+    }
+]
