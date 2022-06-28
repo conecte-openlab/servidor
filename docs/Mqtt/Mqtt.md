@@ -19,12 +19,27 @@ Para a instalação do Mqtt, basta sequir os passos abaixo:
 
 - ![pic](/media/git/mqtt/um.png)
 
-- ![pic](/media/git/mqtt/DOIS.png) 
+- ![pic](/media/git/mqtt/dois.png) 
 
 - ![pic](/media/git/mqtt/tres.png) 
 
 - ![pic](/media/git/mqtt/quatro.png) 
 
+
+### Configuração
+
+No Windows, para iniciar o mosquitto com um determinado arquivo de configuração, dentro da pasta do mosquitto, deve-se usar o seguinte comando:
+
+```
+mosquitto -c "arquivoconfig.conf" -h "ip ou url" -p "porta" -v
+```
+É importante que o aqruivo deve estar dentro da pasta do mosquitto ou subistituir o nome do arquivo pelo endereço completo do arquivo (como C:/Users/usuario/arquivo.conf)
+
+Nesse arquivo pode ser configurado todo o comportamento do mosquitto, um exemplo de configuração é o que permite acesso sem autenticação e que pode ser acessado na porta pardão (1883), nesse caso o conteudo do arquivo de configuração pode ser:
+```
+allow_anonymous true
+listener 1883
+```
 
 ### Referências e recomendações:
 
