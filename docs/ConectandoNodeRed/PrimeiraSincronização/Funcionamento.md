@@ -17,4 +17,6 @@ Abaixo se encontram as instruções de como foi efetuada a primeira conexão com
             return msg;
         Assim, com o retorno do banco de dados, é transmitido todos os nomes que correspondem ao inserido.
 
--Vale a pena ressaltar que, todos os debugs 
+-Vale a pena ressaltar que, todos os debugs no flow são meramente para análise do processo.
+
+![img](/ConectandoNodeRed/PrimeiraSincroniza%C3%A7%C3%A3o/)
